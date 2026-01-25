@@ -1,0 +1,93 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv
+.virtualenv
+
+# Environment Variables & API Keys
+.env
+.env.local
+.env.*.local
+*.key
+secrets.json
+credentials.json
+
+# Data Files (CSV, Excel, etc.)
+*.csv
+*.xlsx
+*.xls
+data/
+raw_data/
+processed_data/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+.jupyter/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Cache & Temporary Files
+cache/
+.cache/
+tmp/
+temp/
+*.log
+*.tmp
+
+# Model & Output Files
+models/
+checkpoints/
+outputs/
+*.pkl
+*.pickle
+*.h5
+*.pt
+*.pth
+
+# Pinecone
+.pinecone/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
