@@ -1,4 +1,36 @@
-# Python
+# ==========================================
+# Starbucks Recommendation System .gitignore
+# ==========================================
+
+# ============ API Keys & Secrets ============
+# CRITICAL: Never commit API keys or credentials
+.env
+.env.local
+.env.production
+config.py
+src/config.py
+*.key
+*.pem
+secrets.json
+credentials.json
+
+# OpenAI API keys
+openai_key.txt
+openai.key
+
+# Pinecone credentials
+pinecone_key.txt
+pinecone.key
+
+# ============ Python ============
+# Virtual Environment
+isenv/
+venv/
+env/
+ENV/
+*.venv
+
+# Python cache and compiled files
 __pycache__/
 *.py[cod]
 *$py.class
@@ -16,78 +48,314 @@ parts/
 sdist/
 var/
 wheels/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
-# Virtual Environments
-venv/
-env/
-ENV/
-.venv
-.virtualenv
+# PyInstaller
+*.manifest
+*.spec
 
-# Environment Variables & API Keys
-.env
-.env.local
-.env.*.local
-*.key
-secrets.json
-credentials.json
-
-# Data Files (CSV, Excel, etc.)
-*.csv
-*.xlsx
-*.xls
-data/
-raw_data/
-processed_data/
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb_checkpoints/
-.jupyter/
+*.ipynb
 
-# IDEs
-.vscode/
+# IPython
+profile_default/
+ipython_config.py
+
+# PyCharm
 .idea/
-*.swp
-*.swo
-*~
-.DS_Store
+*.iml
+*.iws
+.idea_modules/
 
-# Cache & Temporary Files
-cache/
-.cache/
-tmp/
-temp/
-*.log
-*.tmp
+# VS Code
+.vscode/
+*.code-workspace
 
-# Model & Output Files
-models/
-checkpoints/
-outputs/
-*.pkl
-*.pickle
-*.h5
-*.pt
-*.pth
+# Spyder
+.spyderproject
+.spyproject
 
-# Pinecone
-.pinecone/
+# Rope
+.ropeproject
+
+# ============ Node.js / Frontend ============
+# Dependencies
+node_modules/
+frontend/node_modules/
+jspm_packages/
 
 # Testing
-.pytest_cache/
-.coverage
-htmlcov/
+coverage/
 
-# Mac
+# Production builds
+frontend/dist/
+frontend/build/
+build/
+dist/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Next.js build output (if applicable)
+.next
+out
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Vite build output
+.vite/
+
+# Temporary files
+tmp/
+temp/
+
+# ============ macOS ============
 .DS_Store
 .AppleDouble
 .LSOverride
+._*
 
-# Windows
+# Thumbnails
+Thumbs.db
+Thumbs.db:encryptable
+
+# macOS Finder
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# ============ Windows ============
 Thumbs.db
 ehthumbs.db
+ehthumbs_vista.db
 Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# ============ Linux ============
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============ Editors ============
+# Vim
+*.swp
+*.swo
+*.swn
+*~
+.*.sw[a-p]
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Atom
+.atom/
+
+# ============ Project-Specific ============
+# Generated files
+submission.csv.backup
+*.csv.bak
+*.csv.old
+
+# Evaluation results (keep only final version)
+training_evaluation_results.csv.backup
+validation_results_*.csv
+test_results_*.csv
+
+# Temporary analysis files
+src/temp_*.py
+src/debug_*.py
+src/test_*.py
+scratch.py
+playground.py
+
+# Large data files (if not needed in repo)
+# Uncomment if your dataset is too large:
+# data/*.csv
+# data/raw/
+# data/processed/
+
+# Model checkpoints (if any)
+models/checkpoints/
+*.h5
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+
+# Vector database local files (Pinecone is cloud-hosted)
+pinecone_data/
+vector_store/
+embeddings_cache/
+
+# Jupyter notebook outputs
+*.ipynb_checkpoints
+*.nbconvert.ipynb
+
+# Python profiling
+*.prof
+*.lprof
+profile_stats
+
+# ============ Documentation ============
+# Generated documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+site/
+
+# Backup documentation
+*.md.backup
+*.md.bak
+
+# ============ Logs & Debug ============
+# Application logs
+*.log
+logs/
+log/
+application.log
+error.log
+debug.log
+
+# Flask logs
+instance/
+
+# ============ Database ============
+# SQLite databases (if any)
+*.db
+*.sqlite
+*.sqlite3
+
+# PostgreSQL dumps
+*.sql
+*.dump
+
+# ============ Testing ============
+# Test outputs
+test_output/
+test_results/
+pytest_cache/
+.pytest_cache/
+
+# ============ CI/CD ============
+# GitHub Actions artifacts
+.github/workflows/artifacts/
+
+# ============ Miscellaneous ============
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Image previews (if generating thumbnails)
+thumbnails/
+preview/
+
+# Temporary uploads
+uploads/
+tmp_uploads/
+
+# Cache directories
+.cache/
+cache/
+
+# System files
+*.bak
+*.tmp
+*.temp
+~*
+
+# ============ Keep These Files ============
+# Important: Use ! to force-include files that match above patterns
+!requirements.txt
+!.gitkeep
+!README.md
+!LICENSE
+!.github/
+!data/products.csv
+!data/queries_train.csv
+!data/queries_test.csv
+
+# ============ Optional: Large Files ============
+# If you have large files, consider using Git LFS
+# Uncomment these lines if needed:
+# *.pptx
+# *.pdf
+# *.mp4
+# *.mov
+
+# ============ Custom Exclusions ============
+# Add any project-specific files here:
+# experiments/
+# sandbox/
+# old_versions/

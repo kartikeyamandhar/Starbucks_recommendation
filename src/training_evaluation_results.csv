@@ -1,0 +1,101 @@
+query_id,query_text,num_predicted,num_relevant,ndcg,ndcg@5,ndcg@10,recall
+TRAIN_001,"need a pick me up, something like just black coffee that's need the caffeine and under 45 grams of sugar",5,4,0.7025531747469493,0.7025531747469493,0.7025531747469493,1.0
+TRAIN_002,May I get a chai or tea that's no regular milk and under 250 cal?,15,15,0.7832045155993156,0.9355627824996994,0.8838388994985813,1.0
+TRAIN_003,hit me with basic brewed coffee that's under 45 grams of sugar and cheaper than $5.0,5,5,0.8111161075879897,0.8111161075879897,0.8111161075879897,1.0
+TRAIN_004,i want some tea that's less than 200 calories and max 30g sugar,15,15,0.7258237851437731,0.9480469535917826,0.878594212556697,1.0
+TRAIN_005,could i get a cold brew that's under 100 cal and vegan friendly please?,5,5,0.9999999999999998,0.9999999999999998,0.9999999999999998,1.0
+TRAIN_006,running late but i need a cappuccino or latte that's cold and without milk,8,8,0.7253211392998299,0.9356643865866562,0.7253211392998299,1.0
+TRAIN_007,May I get drip coffee that's strong and less than $5.5?,4,4,0.8087645350370528,0.8087645350370528,0.8087645350370528,1.0
+TRAIN_008,May I get a latte that's less than $4.0 and steaming?,3,3,0.8675034925694373,0.8675034925694373,0.8675034925694373,1.0
+TRAIN_009,I'm looking for herbal tea that's cheaper than $4.0 and no dairy,10,10,0.83904653596291,0.9351125863638808,0.83904653596291,1.0
+TRAIN_010,give me a plain coffee that's max $4.5 and without milk,4,4,0.8854504001098568,0.8854504001098568,0.8854504001098568,1.0
+TRAIN_011,i want an americano or latte that's less than 100 calories and fully vegan,8,8,0.8181520973732944,0.8904680881988627,0.8181520973732944,1.0
+TRAIN_012,I'm looking for espresso something that's non-dairy and max $4.5,5,5,0.9542080637541477,0.9542080637541477,0.9542080637541477,1.0
+TRAIN_013,lemme get a cappuccino or latte that's 20g sugar or less and under $4.0,3,3,0.9725044904464194,0.9725044904464194,0.9725044904464194,1.0
+TRAIN_014,I'll take some cold brew that's no more than $5.0 and under 30g sugar,4,4,0.949604428345699,0.949604428345699,0.949604428345699,1.0
+TRAIN_015,"it's hot out, i need some tea that's medium caffeine and under $5.0",8,2,0.4811114797666135,0.0,0.4811114797666135,0.5
+TRAIN_016,do you have a refresher that's max $6.5 and max 30g sugar?,6,6,0.942920208754247,0.9561477088560264,0.942920208754247,1.0
+TRAIN_017,i need a fruity refresher that's no dairy and no more than 200 cal,10,10,0.9106151036666061,0.9737813241296018,0.9106151036666061,1.0
+TRAIN_018,ooh do you have herbal tea that's vegan friendly and no more than 200 cal?,13,13,0.8938861796518844,0.9486304632545487,0.9048688387550594,1.0
+TRAIN_019,running late but i need something refreshing and fruity that's no more than 150 cal and no more than $4.5,32,3,0.7138882887358732,0.8100246963916978,0.7696392251228926,1.0
+TRAIN_020,hit me with something refreshing and fruity that's no more than 40g sugar and $6.5 or less,85,10,0.726733465883156,0.9193964648185342,0.7831174626054119,1.0
+TRAIN_021,yo i need a latte that's max 250 calories and 25g sugar or less,22,22,0.7481600026793885,0.9466366481409416,0.946875547285406,1.0
+TRAIN_022,"trying to be healthy, got an espresso drink that's less than $6.0 and under 45g sugar?",32,32,0.8805796894482792,0.9548148995593905,0.9641200307458734,1.0
+TRAIN_023,could i get an americano or latte that's under 40 grams of sugar and no more than $5.5 please?,13,13,0.7599426660461681,0.973682044792408,0.9617925954535121,1.0
+TRAIN_024,hey can i get something refreshing and fruity that's icy and 250 calories or less,50,9,0.8540093143249948,0.978946539379801,0.8988765192510066,1.0
+TRAIN_025,"trying to be healthy, got some cold brew that's less than $6.5 and without milk?",5,5,0.7740328582392828,0.7740328582392828,0.7740328582392828,1.0
+TRAIN_026,could i get a plain coffee that's cheaper than $5.0 and dairy free please?,5,5,0.9055844119960057,0.9055844119960057,0.9055844119960057,1.0
+TRAIN_027,"need a pick me up, something like an espresso drink that's max 250 calories and hot",13,13,0.9215166722774026,0.9717445157416618,0.9426405520261765,1.0
+TRAIN_028,hey can i get a cold brew that's fully vegan and no more than 25g sugar,5,5,0.9829872681633907,0.9829872681633907,0.9829872681633907,1.0
+TRAIN_029,got any herbal tea that's no more than 45g sugar and oat milk or something dairy free?,15,15,0.7552548526952783,0.9510238311109861,0.8613589862340387,1.0
+TRAIN_030,could i get a refresher that's less than $4.5 and under 25g sugar please?,3,3,0.9224945116765986,0.9224945116765986,0.9224945116765986,1.0
+TRAIN_031,yo i need just black coffee that's without milk and hot,5,5,0.8203473990537836,0.8203473990537836,0.8203473990537836,1.0
+TRAIN_032,I'm looking for a latte that's under $6.5 and warm,18,18,0.7874135007023508,0.9753345867499614,0.9596727298977423,1.0
+TRAIN_033,I'll take house coffee that's max 45g sugar and no animal stuff,5,5,0.7649222041286438,0.7649222041286438,0.7649222041286438,1.0
+TRAIN_034,espresso something that's under 150 cal and no more than 25g sugar please,18,18,0.8834845514926203,0.9730345295768947,0.9568755081761411,1.0
+TRAIN_035,I'd like an americano or latte that's max $5.5 and under 25 grams of sugar please,13,13,0.7578619605215583,0.9581903302186681,0.9504780534869691,1.0
+TRAIN_036,hi! looking for a tea that's without caffeine and under $4.0,4,4,0.9999999999999999,0.9999999999999999,0.9999999999999999,1.0
+TRAIN_037,i want an espresso drink that's 30g sugar or less and non-dairy,15,15,0.751018877079422,0.9835647643102554,0.9798668754448258,1.0
+TRAIN_038,I'm looking for tea that's vegan friendly and without milk,14,14,0.8284745477633134,0.9377402433954052,0.9068474866417515,1.0
+TRAIN_039,May I get tea that's less than $5.5 and fully vegan?,13,13,0.8636089112485719,0.9532398098998666,0.9271786440773649,1.0
+TRAIN_040,could i get one of those refreshers that's max 150 calories and oat milk or something dairy free please?,10,10,0.9262706028592884,0.9676920906833708,0.9262706028592884,1.0
+TRAIN_041,"need a pick me up, something like something refreshing and fruity that's oat milk or something dairy free and under $5.0",39,6,0.7605198889808521,0.9511959729949141,0.8248746177529592,1.0
+TRAIN_042,I'm looking for one of those refreshers that's light on caffeine and less than 20g of sugar,2,2,0.8597186998521971,0.8597186998521971,0.8597186998521971,1.0
+TRAIN_043,I'd like tea that's no animal stuff and hot please,8,7,0.8729834602288538,0.9578173046624666,0.8729834602288538,1.0
+TRAIN_044,hi! looking for some cold brew that's less than 400 calories and extra caffeine,4,12,0.9797935174386243,0.9797935174386243,0.9797935174386243,0.3333333333333333
+TRAIN_045,May I get an americano or latte that's no more than $4.0 and oat milk or something dairy free?,1,1,1.0,1.0,1.0,1.0
+TRAIN_046,"trying to be healthy, got drip coffee that's less than 35g of sugar and no animal stuff?",5,5,0.7649222041286438,0.7649222041286438,0.7649222041286438,1.0
+TRAIN_047,I'll take green tea that's regular caffeine and under 30 grams of sugar,16,3,0.42606729727583154,0.7214773752660675,0.4668988748509847,1.0
+TRAIN_048,hit me with some cold brew that's lots of caffeine and under 10 grams of sugar,4,6,0.9693716048751382,0.9693716048751382,0.9693716048751382,0.6666666666666666
+TRAIN_049,ooh do you have a fruity refresher that's cheaper than $5.0 and fully vegan?,6,6,0.9826138431637859,0.987128322472551,0.9826138431637859,1.0
+TRAIN_050,got any something blended that's blended and less than $6.5?,17,15,0.8772975941529357,0.9202010573459353,0.9286608207548714,1.0
+TRAIN_051,"hey there, i'd love basic brewed coffee that's not too much caffeine, no dairy, and no more than 200 cal",1,1,1.0,1.0,1.0,1.0
+TRAIN_052,"i need a cold brew that's no dairy, under $4.0, and lots of caffeine",5,1,1.0,1.0,1.0,1.0
+TRAIN_053,"i'm craving drip coffee that's vegan, hot, and less than 100 calories",5,5,0.8622749404529718,0.8622749404529718,0.8622749404529718,1.0
+TRAIN_054,"hey there, i'd love a latte that's under 35 grams of sugar, no more than $6.5, and vegan",15,15,0.7716699441961238,0.9741840040199701,0.9089913844556075,1.0
+TRAIN_055,"trying to be healthy, got a cappuccino or latte that's dairy free, 25g sugar or less, and hot?",6,6,0.8981139444864897,0.8981139444864897,0.8981139444864897,1.0
+TRAIN_056,"hit me with a latte that's max $4.5, less than 100 calories, and under 45 grams of sugar",7,7,0.8072399219628144,0.843750072085936,0.8072399219628144,1.0
+TRAIN_057,"trying to be healthy, got a chai or tea that's under 45g sugar, $6.5 or less, and non-dairy?",15,15,0.7450423360053609,0.9443796570476066,0.845366616525076,1.0
+TRAIN_058,"got any some tea that's without caffeine, without milk, and chilled?",2,2,1.0,1.0,1.0,1.0
+TRAIN_059,"ooh do you have a latte that's max $5.0, dairy free, and max 15g sugar?",5,5,0.8945165067688502,0.8945165067688502,0.8945165067688502,1.0
+TRAIN_060,"lemme get that cold brew stuff that's less than $4.5, no more than 15g sugar, and no animal stuff",1,1,1.0,1.0,1.0,1.0
+TRAIN_061,"I'd like that cold brew stuff that's high caffeine, no animal stuff, and no more than 30g sugar please",3,5,0.9851204491934696,0.9851204491934696,0.9851204491934696,0.6
+TRAIN_062,"I'm looking for a refresher that's max $5.0, oat milk or something dairy free, and under 150 cals",6,6,0.9013068149951202,0.9387782298109622,0.9013068149951202,1.0
+TRAIN_063,"I'd like drip coffee that's not too much caffeine, cheaper than $5.5, and under 150 cal please",1,1,1.0,1.0,1.0,1.0
+TRAIN_064,"lemme get an americano or latte that's under 300 cal, under $5.0, and max 15g sugar",9,9,0.8400191880665209,0.9622079506093022,0.8400191880665209,1.0
+TRAIN_065,"tea that's under 300 cals, under $4.5, and no regular milk please",12,12,0.8233774997469727,0.9387024590645278,0.8441609547968979,1.0
+TRAIN_066,"long day... give me a cappuccino or latte that's warm, under 250 cals, and high caffeine",3,4,0.9999999999999999,0.9999999999999999,0.9999999999999999,0.75
+TRAIN_067,"what do you have for a fruity refresher that's no regular milk, vegan, and under 350 cal?",10,10,0.8725601387062673,0.9570958079737907,0.8725601387062673,1.0
+TRAIN_068,"it's hot out, i need nitro cold brew that's less than 30g of sugar, without milk, and under 400 cals",5,5,0.8910541448622148,0.8910541448622148,0.8910541448622148,1.0
+TRAIN_069,"can i do a cold brew that's without milk, under 20 grams of sugar, and under 300 cals",5,5,0.9610096069211456,0.9610096069211456,0.9610096069211456,1.0
+TRAIN_070,"lemme get herbal tea that's mild, cheaper than $5.5, and iced",2,5,0.9889848111768662,0.9889848111768662,0.9889848111768662,0.4
+TRAIN_071,"I'm looking for green tea that's not too much caffeine, no animal stuff, and steaming",3,4,0.8634526295685602,0.8634526295685602,0.8634526295685602,0.75
+TRAIN_072,"i need green tea that's no animal stuff, non-dairy, and less than $6.5",15,14,0.7961826594419744,0.9330568719427427,0.8655248407262699,1.0
+TRAIN_073,"what do you have for drip coffee that's low caffeine, less than 400 calories, and dairy free?",1,1,1.0,1.0,1.0,1.0
+TRAIN_074,"i'm craving a chai or tea that's under 15g sugar, cold, and max $6.5",3,3,0.8174935137996167,0.8174935137996167,0.8174935137996167,1.0
+TRAIN_075,"something with espresso that's plant based, no more than $5.5, and regular caffeine please",5,2,0.9271157665047842,0.9271157665047842,0.9271157665047842,1.0
+TRAIN_076,"Could I have a cold brew that's under 100 cal, fully vegan, and dairy free?",5,5,0.9872536302235485,0.9872536302235485,0.9872536302235485,1.0
+TRAIN_077,"I'll take house coffee that's less than 30g of sugar, warm, and lots of caffeine",4,4,0.799298601332718,0.799298601332718,0.799298601332718,1.0
+TRAIN_078,"i need a refresher that's under $6.5, vegan friendly, and oat milk or something dairy free",10,10,0.8890389960903513,0.9733860072992534,0.8890389960903513,1.0
+TRAIN_079,"ooh do you have a tea that's no animal stuff, icy, and without caffeine?",2,2,1.0,1.0,1.0,1.0
+TRAIN_080,"lemme get basic brewed coffee that's vegan, less than 250 calories, and oat milk or something dairy free",5,5,0.8398425955932107,0.8398425955932107,0.8398425955932107,1.0
+TRAIN_081,"long day... give me an espresso drink that's 35g sugar or less, max 250 calories, and chilled",14,14,0.736391595564297,0.956078868023612,0.8199226106001487,1.0
+TRAIN_082,"hey there, i'd love house coffee that's extra caffeine, max $4.0, and no regular milk",3,3,0.7899980042460358,0.7899980042460358,0.7899980042460358,1.0
+TRAIN_083,"lemme get some cold brew that's less than 150 calories, no animal stuff, and without milk",5,5,0.9677584336841213,0.9677584336841213,0.9677584336841213,1.0
+TRAIN_084,"hit me with nitro cold brew that's cheaper than $5.5, oat milk or something dairy free, and under 30g sugar",4,4,0.949604428345699,0.949604428345699,0.949604428345699,1.0
+TRAIN_085,"it's hot out, i need a plain coffee that's low caffeine, 100 calories or less, and no more than $5.5",0,1,0.0,0.0,0.0,0.0
+TRAIN_086,"need a pick me up, something like just black coffee that's $5.5 or less, no more than 45g sugar, and vegan friendly",5,5,0.9183307817724569,0.9183307817724569,0.9183307817724569,1.0
+TRAIN_087,"hit me with a cappuccino or latte that's max $6.5, oat milk or something dairy free, and lots of caffeine",8,9,0.8243796960703189,0.9895190088805202,0.8243796960703189,0.8888888888888888
+TRAIN_088,"May I get green tea that's plant based, under 30 grams of sugar, and medium caffeine?",12,1,0.43067655807339306,0.43067655807339306,0.43067655807339306,1.0
+TRAIN_089,"hey can i get something with espresso that's no more than $5.0, dairy free, and under 35 grams of sugar",5,5,0.9609568905171235,0.9609568905171235,0.9609568905171235,1.0
+TRAIN_090,"get me house coffee that's less than 250 calories, less than $6.0, and mild",1,1,1.0,1.0,1.0,1.0
+TRAIN_091,"an americano or latte that's max $4.5, max 250 calories, and vegan please",5,5,0.8209780454481289,0.8209780454481289,0.8209780454481289,1.0
+TRAIN_092,"running late but i need just black coffee that's less than 45g of sugar, vegan friendly, and under 200 cal",5,5,0.8203473990537836,0.8203473990537836,0.8203473990537836,1.0
+TRAIN_093,"Could I have drip coffee that's fully vegan, under 150 cal, and cheaper than $5.0?",5,5,0.7624397394258257,0.7624397394258257,0.7624397394258257,1.0
+TRAIN_094,"hey there, i'd love a tea that's no more than 150 cal, no dairy, and vegan",13,13,0.8257042342057238,0.9472805691181568,0.8929084673496216,1.0
+TRAIN_095,"I'm looking for drip coffee that's fully vegan, non-dairy, and no more than 350 cal",5,5,0.7649222041286438,0.7649222041286438,0.7649222041286438,1.0
+TRAIN_096,"lemme get a refresher that's 400 calories or less, vegan friendly, and dairy free",10,10,0.8944439271767877,0.9570958079737907,0.8944439271767877,1.0
+TRAIN_097,"May I get an espresso drink that's steaming, vegan friendly, and under 30g sugar?",7,7,0.8122879770732545,0.9553188651293172,0.8122879770732545,1.0
+TRAIN_098,"hey can i get something blended that's blended, regular caffeine, and under 350 cal",7,2,0.9127624840191821,0.9271157665047842,0.9127624840191821,1.0
+TRAIN_099,"give me a frozen drink that's high caffeine, frozen, and 300 calories or less",3,1,1.0,1.0,1.0,1.0
+TRAIN_100,"got any basic brewed coffee that's under 40 grams of sugar, less than $4.0, and no regular milk?",4,4,0.8675722865484379,0.8675722865484379,0.8675722865484379,1.0

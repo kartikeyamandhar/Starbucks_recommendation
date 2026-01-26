@@ -42,6 +42,61 @@ def parse_relevant_products(relevant_products_str: str) -> List[str]:
     return [x.strip() for x in relevant_products_str.split(';') if x.strip()]
 
 
+# def compute_ndcg(predicted: List[str], ground_truth: List[str], k: int = None) -> float:
+#     """
+#     Compute NDCG (Normalized Discounted Cumulative Gain) score
+    
+#     Args:
+#         predicted: List of predicted product IDs (ranked)
+#         ground_truth: List of ground truth product IDs (ranked)
+#         k: Consider only top k predictions (None = all)
+        
+#     Returns:
+#         NDCG score between 0 and 1
+#     """
+#     if not ground_truth:
+#         return 0.0
+    
+#     if not predicted:
+#         return 0.0
+    
+#     # Truncate to top k if specified
+#     if k:
+#         predicted = predicted[:k]
+    
+#     # Create relevance scores: 1 if in ground truth, 0 otherwise
+#     # Higher position in ground truth = higher relevance
+#     relevance = []
+#     for pred_id in predicted:
+#         if pred_id in ground_truth:
+#             # Higher relevance for products that appear earlier in ground truth
+#             position = ground_truth.index(pred_id)
+#             relevance.append(len(ground_truth) - position)
+#         else:
+#             relevance.append(0)
+    
+#     # If no relevant items found, NDCG is 0
+#     if sum(relevance) == 0:
+#         return 0.0
+    
+#     # Compute ideal DCG (sort ground truth relevances in descending order)
+#     ideal_relevance = sorted(range(len(ground_truth), 0, -1), reverse=True)
+    
+#     # Pad to same length for sklearn
+#     max_len = max(len(relevance), len(ideal_relevance))
+#     relevance_padded = relevance + [0] * (max_len - len(relevance))
+#     ideal_padded = ideal_relevance + [0] * (max_len - len(ideal_relevance))
+    
+#     # Reshape for sklearn (expects 2D array)
+#     y_true = np.array([ideal_padded])
+#     y_score = np.array([relevance_padded])
+    
+#     try:
+#         score = ndcg_score(y_true, y_score)
+#         return score
+#     except:
+#         return 0.0
+
 def compute_ndcg(predicted: List[str], ground_truth: List[str], k: int = None) -> float:
     """
     Compute NDCG (Normalized Discounted Cumulative Gain) score
@@ -64,12 +119,26 @@ def compute_ndcg(predicted: List[str], ground_truth: List[str], k: int = None) -
     if k:
         predicted = predicted[:k]
     
-    # Create relevance scores: 1 if in ground truth, 0 otherwise
-    # Higher position in ground truth = higher relevance
+    # Special case: if we only have 1 ground truth item
+    # sklearn's ndcg_score requires at least 2 documents
+    if len(ground_truth) == 1:
+        if len(predicted) > 0 and predicted[0] == ground_truth[0]:
+            # Perfect! Correct item at position 1
+            return 1.0
+        elif ground_truth[0] in predicted:
+            # Found but not at position 1 - calculate discounted score
+            position = predicted.index(ground_truth[0]) + 1  # 1-indexed
+            dcg = 1.0 / np.log2(position + 1)
+            idcg = 1.0 / np.log2(2)  # Perfect score at position 1
+            return dcg / idcg
+        else:
+            # Not found at all
+            return 0.0
+    
+    # Create relevance scores: higher position in ground truth = higher relevance
     relevance = []
     for pred_id in predicted:
         if pred_id in ground_truth:
-            # Higher relevance for products that appear earlier in ground truth
             position = ground_truth.index(pred_id)
             relevance.append(len(ground_truth) - position)
         else:
@@ -94,7 +163,9 @@ def compute_ndcg(predicted: List[str], ground_truth: List[str], k: int = None) -
     try:
         score = ndcg_score(y_true, y_score)
         return score
-    except:
+    except Exception as e:
+        # This shouldn't happen now, but keeping as safety
+        print(f"⚠️  sklearn ndcg_score error: {e}")
         return 0.0
 
 
